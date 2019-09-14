@@ -35,6 +35,13 @@ def initInstructions() :
             "text": "midnight"
         }
         )
+    instructions.append(
+        {
+            "path":  "/usr/lib/vocal_player/instruction/slot_not_found.mp3",
+            "text": "slot not found"
+        }
+        )
+    
 
     instructions.append(
         {

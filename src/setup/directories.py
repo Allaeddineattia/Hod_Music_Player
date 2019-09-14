@@ -16,7 +16,6 @@ def handleError(err):
     exit(0)
 
 def createReadOnlyDirectory( path):
-
     print(path + " directory does not exist")
     try :
         os.mkdir(path,0755)
@@ -40,7 +39,7 @@ def createMissingDirectories():
         if not(os.path.exists(directory)):
             createReadOnlyDirectory( directory)
     for directory in writeAccesibleDirectories:
-        if( os.path.exists(directory)):
+        if not( os.path.exists(directory)):
             createWriteAccesibleDirectory( directory)
 
 def countMissingDirecroties():
